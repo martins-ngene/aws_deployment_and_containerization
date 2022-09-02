@@ -25,7 +25,7 @@ def client():
 def test_health(client):
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json == "Jesus is real, The Holy Spirit speaks, God never changes."
+    assert response.json == "Jesus is real, The Holy Spirit speaks"
 
 
 def test_auth(client):
